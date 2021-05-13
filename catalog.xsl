@@ -12,7 +12,6 @@
         <th style="text-align:left">Artist</th>
         <th style="text-align:left">País</th>
       </tr>
-      <xsl:for-each select="catalog/cd">
       <tr>
         <td><xsl:value-of select="title"/></td>
         <td><xsl:value-of select="artist"/></td>
