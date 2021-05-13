@@ -12,11 +12,13 @@
         <th style="text-align:left">Artist</th>
         <th style="text-align:left">País</th>
       </tr>
+      <xsl:for-each select="catalog/cd[artist='Bob Dylan']">
       <tr>
         <td><xsl:value-of select="title"/></td>
         <td><xsl:value-of select="artist"/></td>
         <td><xsl:value-of select="country"/></td>
       </tr>
+      </xsl:for-each>
         <td><xsl:value-of select="catalog/cd/title"/></td>
         <td><xsl:value-of select="catalog/cd/artist"/></td>
     </table>
