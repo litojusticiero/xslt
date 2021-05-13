@@ -18,7 +18,8 @@
         <td><xsl:value-of select="artist"/></td>
         <td><xsl:value-of select="country"/></td>
       </tr>
-      </xsl:for-each>
+        <td><xsl:value-of select="catalog/cd/title"/></td>
+        <td><xsl:value-of select="catalog/cd/artist"/></td>
     </table>
   </body>
   </html>
